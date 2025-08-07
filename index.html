@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TikBioLink</title>
     <style>
         body {
@@ -12,6 +11,7 @@
             color: white;
             text-align: center;
             padding: 2em;
+            margin: 0;
         }
         .profile-img {
             width: 120px;
@@ -36,6 +36,48 @@
             border-radius: 10px;
             text-decoration: none;
             font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .link:hover {
+            background: #ddd;
+        }
+
+        /* Premium CTA styles */
+        #premium-cta, #premium-cta-ar {
+            background: #ff004f;
+            color: white;
+            padding: 30px 20px;
+            max-width: 600px;
+            margin: 2.5em auto 1.5em auto;
+            border-radius: 15px;
+            font-family: Arial, sans-serif;
+        }
+        #premium-cta h2, #premium-cta-ar h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        #premium-cta p, #premium-cta-ar p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+        #premium-cta a, #premium-cta-ar a {
+            background: white;
+            color: #ff004f;
+            padding: 12px 30px;
+            font-weight: bold;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            display: inline-block;
+            transition: background 0.3s ease;
+        }
+        #premium-cta a:hover, #premium-cta-ar a:hover {
+            background: #cc0040;
+            color: white;
+        }
+        #premium-cta-ar {
+            direction: rtl;
         }
     </style>
 </head>
@@ -45,5 +87,19 @@
     <a href="https://t.me/yourchannel" class="link">Join Telegram</a>
     <a href="https://your-cpa-offer.com" class="link">Get Free Crypto</a>
     <a href="https://youtube.com" class="link">Watch on YouTube</a>
+
+    <!-- Premium CTA English -->
+    <section id="premium-cta">
+        <h2>Unlock Pro Features & Boost Your Bio Link!</h2>
+        <p>Upgrade now to add unlimited links, images, countdown timers, and get advanced analytics with custom branding.</p>
+        <a href="/pricing">Upgrade to Premium</a>
+    </section>
+
+    <!-- Premium CTA Arabic -->
+    <section id="premium-cta-ar">
+        <h2>افتح الميزات الاحترافية وزد من قوة رابط البايو الخاص بك!</h2>
+        <p>قم بالترقية الآن وأضف روابط وصور ومؤقتات غير محدودة، واحصل على تحليلات متقدمة مع تخصيص العلامة التجارية.</p>
+        <a href="/pricing">الترقية إلى النسخة المميزة</a>
+    </section>
 </body>
 </html>
